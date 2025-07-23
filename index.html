@@ -10,23 +10,24 @@
 <body>
   <div class="container">
     <h1>QR Code Generator</h1>
+    
+    <div class="toggle-container">
+        <img id="theme-icon" src="moon.svg" alt="Theme Icon" class="icon" />
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle" />
+            <span class="slider"></span>
+        </label>
+    </div>
+
     <form id="qrForm">
-      <label>Name:<input type="text" id="name" required></label>
-      <label>Start DateTime:<input type="datetime-local" id="start" required></label>
-      <label>End DateTime:<input type="datetime-local" id="end" required></label>
-      <label>Agency:<input type="text" id="agency" required></label>
-      <button type="submit">Generate QR</button>
+        <label>Name:<input type="text" id="name" name="name" required></label>
+        <label>Start DateTime:<input type="datetime-local" id="start" name="start" required></label>
+        <label>End DateTime:<input type="datetime-local" id="end" name="end" required></label>
+        <label>Agency:<input type="text" id="agency" name="agency" required></label>
+        <button type="submit">Generate QR</button>
     </form>
-    <canvas id="qr"></canvas>
-    <!--<button id="toggleTheme">Toggle Light/Dark</button>-->
-  <div class="theme-toggle">
-  <input type="checkbox" id="themeSwitch" />
-  <label for="themeSwitch" class="switch">
-    <span class="icon">🌞</span>
-    <span class="slider"></span>
-    <span class="icon">🌙</span>
-  </label>
-  </div>
+    <canvas id="qr"></canvas>    
+  
   </div>
   <script src="qrious.min.js"></script>
   <script src="main.js"></script>
