@@ -141,4 +141,5 @@ input:checked + .slider::before {
   color: var(--button-text);
   border: none;
   cursor: pointer;
+  margin-bottom: 20px;
 }
