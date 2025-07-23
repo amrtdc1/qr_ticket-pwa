@@ -1,6 +1,6 @@
 const form = document.getElementById('qrForm');
 const qrCanvas = document.getElementById('qr');
-const toggleBtn = document.getElementById('toggleTheme');
+const toggle = document.getElementById('theme-toggle');
 const qr = new QRious({ element: qrCanvas, size: 250 });
 
 form.addEventListener('submit', e => {
@@ -17,8 +17,11 @@ form.addEventListener('submit', e => {
 document.getElementById('themeSwitch').addEventListener('change', function () {
   document.body.classList.toggle('dark', this.checked);
 });
-toggleBtn.addEventListener('click', () => {
+toggle.addEventListener('change', () => {
   document.body.classList.toggle('dark');
+  icon.src = document.body.classList.contains('dark')
+    ? 'sun.svg'
+    : 'moon.svg';
 });
 
 if ('serviceWorker' in navigator) {
