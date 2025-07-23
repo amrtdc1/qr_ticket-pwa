@@ -42,10 +42,10 @@ body.dark {
   --text: white;
 }
 
-/*button.dark {
+button.dark {
   --bg: white;
   --text: black;
-}*/
+}
 
 .theme-toggle {
   margin-top: 1em;
