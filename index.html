@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Generator PWA</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>QR Code Generator</h1>
+    <form id="qrForm">
+      <label>Name:<input type="text" id="name" required></label>
+      <label>Start DateTime:<input type="datetime-local" id="start" required></label>
+      <label>End DateTime:<input type="datetime-local" id="end" required></label>
+      <label>Agency:<input type="text" id="agency" required></label>
+      <button type="submit">Generate QR</button>
+    </form>
+    <canvas id="qr"></canvas>
+    <!--<button id="toggleTheme">Toggle Light/Dark</button>-->
+  <div class="theme-toggle">
+  <input type="checkbox" id="themeSwitch" />
+  <label for="themeSwitch" class="switch">
+    <span class="icon">🌞</span>
+    <span class="slider"></span>
+    <span class="icon">🌙</span>
+  </label>
+  </div>
+  </div>
+  <script src="qrious.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "QR Code Generator",
+  "short_name": "QRGen",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#ffffff",
+  "icons": []
+}
