@@ -20,11 +20,19 @@
     </div>
 
     <form id="simple-form">
-        <label>Name:<input type="text" id="name" name="name" required></label>
-        <label>Start DateTime:<input type="datetime-local" id="start" name="start" required></label>
-        <label>End DateTime:<input type="datetime-local" id="end" name="end" required></label>
-        <label>Agency:<input type="text" id="agency" name="agency" required></label>
-        <button type="submit">Generate QR</button>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      
+      <label for="start">Start DateTime:</label>
+      <input type="datetime-local" id="start" name="start" required />
+
+      <label for="end">End DateTime:</label>
+      <input type="datetime-local" id="end" name="end" required />
+
+      <label for="agency">Agency:</label>
+      <input type="text" id="agency" name="agency" required />
+      
+      <button type="submit">Generate QR</button>
     </form>
     <canvas id="qr"></canvas>    
   
