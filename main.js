@@ -1,4 +1,4 @@
-const form = document.getElementById('qrForm');
+const form = document.getElementById('simple-form');
 const qrCanvas = document.getElementById('qr');
 const toggle = document.getElementById('theme-toggle');
 const qr = new QRious({ element: qrCanvas, size: 250 });
@@ -14,9 +14,9 @@ form.addEventListener('submit', e => {
   qr.value = JSON.stringify(data);
 });
 
-document.getElementById('themeSwitch').addEventListener('change', function () {
-  document.body.classList.toggle('dark', this.checked);
-});
+--document.getElementById('themeSwitch').addEventListener('change', function () {
+--  document.body.classList.toggle('dark', this.checked);
+--});
 toggle.addEventListener('change', () => {
   document.body.classList.toggle('dark');
   icon.src = document.body.classList.contains('dark')
